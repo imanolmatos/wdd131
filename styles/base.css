@@ -18,7 +18,7 @@
 
 body {
     min-height: 100vh;
-    width: 1300px;
+    width: 1200px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -70,7 +70,7 @@ nav a:hover {
 
 main {
     display: grid;
-    width: 1300px;
+    max-width: 1900px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     
