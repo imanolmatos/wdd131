@@ -51,6 +51,7 @@ nav{
     align-content: center;
 }
 
+
 nav a {
     display: block;
     color: var(--nav-link-color);
@@ -103,7 +104,7 @@ section ul {
 
 section ul li {
     display: flex;
-    
+
     padding: 10px;
 }
 
