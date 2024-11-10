@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
 
 
 :root {
@@ -21,7 +21,7 @@ body {
     width: 1200px;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2{
     font-family: var(--heading-font);
     color: var(--accent2-color);
 
@@ -73,8 +73,6 @@ main {
     max-width: 1900px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    
-
 }
 
 section.card{ 
@@ -86,8 +84,6 @@ section.card{
     border-spacing: 30px;
     margin: 4px;  
 }
-
-
 
 section.card img{
     width: 200px;
@@ -107,21 +103,17 @@ section.card p {
 }
 
 
- 
-
 div.divpersonal img{
     float: right;
     position: relative;
-    margin: 5px;
-   
+    margin: 5px;   
 }
 
 div.divcountry img {
     float:left;
     align-items:center;
     margin: 1px;
-    padding:20px;
-  
+    padding:20px;  
 }
 
 
