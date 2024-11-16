@@ -1,0 +1,32 @@
+
+:root {
+    --primary-color: #089dff;
+    --secondary-color: #FFFFFC;
+    --accent1-color: #376323;
+    --accent2-color: #000500;   
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+body { font-family: var(--paragraph-font);
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid var(--accent2-color);
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+main {display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+}
+
+section { 
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+p{
+    color:var(--accent2-color) }

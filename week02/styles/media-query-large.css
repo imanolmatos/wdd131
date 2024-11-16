@@ -1,0 +1,19 @@
+@media screen and (min-width: 500px) {
+  body header{ background-color: var(--accent2-color) ;
+        color: var(--secondary-color) ;
+  }
+  body main{display: grid;
+       grid-template-columns: 1fr 1fr ;
+  }
+
+}
+
+
+:root {
+  --primary-color: #089dff;
+  --secondary-color: #FFFFFC;
+  --accent1-color: #376323;
+  --accent2-color: #000500;   
+  --paragraph-font: 'Roboto', sans-serif;
+}
+
