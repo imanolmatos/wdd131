@@ -34,9 +34,8 @@ header{
     border:  2px solid rgba(0,0,0,1); 
 }
 
- #course-title {  display: flex;
-    justify-content: space-around;
-    align-content: center;
+ #course-title {  display: block;
+    text-align: center;
     font-family: var(--heading-font);
     font-size: 24px;
 
@@ -75,14 +74,14 @@ footer {
     align-content: center;
     text-align: center;
     padding: 20px;
+    background-color: #2892D7;
 }
-
-
 
 
 main {
     display: grid;
-    gap: 20px;
+    gap: 40px;
+    padding: 20px;
     max-width: 1900px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -97,6 +96,8 @@ section.card{
     border-spacing: 30px;
     margin: 4px;  
 }
+
+
 
 section.card img{
     width: 200px;
@@ -126,17 +127,20 @@ section.card p {
     align-content:center;
 }
 
-
-div.divpersonal img{
-    float: right;
-    position: relative;
-    margin: 5px;   
+section.resources h2 {
+    text-align: center;
 }
 
-div.divcountry img {
+
+ section.card div.personal img{
+    float: right;
+    margin: 10px;   
+    padding: 20px;
+}
+
+section.card div.country img {
     float:left;
-    align-items:center;
-    margin: 1px;
+    margin: 10px;
     padding:20px;  
 }
 
