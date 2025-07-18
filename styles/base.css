@@ -1,7 +1,7 @@
 
 
 :root {
-    --primary-color: #2892D7;
+    --primary-color: #4EA5DF;
     --secondary-color: #FFFFFC;
     --accent1-color: #376323;
     --accent2-color: #000500;
@@ -63,7 +63,7 @@ p{padding: 4px;
 
 .navigation a {
     display: block;
-    color: #eee;
+    color: var(--nav-link-color);
     padding: 0.75rem;
     text-decoration: none;
     text-align: center;
@@ -79,7 +79,7 @@ footer {
     align-content: center;
     text-align: center;
     padding: 20px;
-    background-color: #2892D7;
+    background-color: var(--primary-color);
     border:  2px solid rgba(0,0,0,1); 
 }
 
@@ -148,6 +148,10 @@ section.card div.country img {
     float:left;
     margin: 10px;
     padding:20px;  
+}
+
+footer span {
+    color:var(--accent2-color);
 }
 
 
