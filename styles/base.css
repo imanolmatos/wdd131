@@ -75,6 +75,7 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #2892D7;
+    border:  2px solid rgba(0,0,0,1); 
 }
 
 
