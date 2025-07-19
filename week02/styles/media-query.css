@@ -1,0 +1,42 @@
+
+:root {
+    --primary-color: #4EA5DF;
+    --secondary-color: #FFFFFC;
+    --accent1-color: #376323;
+    --accent2-color: #000500;
+  
+    --heading-font: 'Bebas Neue', cursive;
+    --paragraph-font: 'Roboto', sans-serif;
+  
+    --nav-background-color: #2892D7;
+    --nav-link-color: #000500;
+    --nav-hover-link-color: #376323;
+    --nav-hover-background-color: #FFFFFC;;
+}
+
+body { font-family: var(--paragraph-font);
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid var(--accent2-color);
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap:1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+p {
+    color: var(--accent2-color);
+}
