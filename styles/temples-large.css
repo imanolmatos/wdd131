@@ -9,6 +9,12 @@
         display: none;
     }
 
+    header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
     .navigation {
         flex-direction: row;
     }
@@ -18,11 +24,7 @@
 		flex: 1 1 100%;
 	}
 
-     #page-title span  {
-    font-family: var(--paragraph-font);
-    font-size: 30px;
-    display: flex;
-     }
+     
     
 }
 
@@ -44,11 +46,9 @@
     }
 
 
-    .navigation {
-        flex-direction: row;
-    }
-    .navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
+        header{
+    display: flex;
+    justify-content:  space-between;
+}
+
 }
