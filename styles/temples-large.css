@@ -1,0 +1,54 @@
+@media screen and (min-width:800px) {
+    .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+    
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+     #page-title span  {
+    font-family: var(--paragraph-font);
+    font-size: 30px;
+    display: flex;
+     }
+    
+}
+
+@media screen and (min-width:1000px) {
+    .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+    #page-title {
+    font-family: var(--paragraph-font);
+    font-size: 30px;
+    display: block;
+
+}
+
+    #menu {
+        display: none;
+    }
+
+
+    .navigation {
+        flex-direction: row;
+    }
+    .navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+}
