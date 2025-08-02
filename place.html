@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Place
+    </title>
+    <meta name="description" content="Place Information, area, populaition, capital, weather. ">
+    <meta name="author" content="Imanol Arturo Matos Ramirez">
+
+    <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <link rel="stylesheet" type="text/css" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header>
+        <h1 id="page-title"> Dominican Republic </h1>
+    </header>
+    <main>
+
+        <div class="hero">
+
+            <picture class="photo">
+                <source srcset="images/beachlarge.webp" media="(min-width: 1000px)">
+                <source srcset="images/beachmedium.webp" media="(min-width: 550px)">
+                <img src="images/beachsmall.webp" alt="Azua's Beach Dominican Republic" width="400" height="200">
+            </picture>
+            <section class="data">
+
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 48,671 sq km</li>
+                    <li>Population: 11,332,972</li>
+                    <li>Capital: Santo Domingo</li>
+                    <li>Languages: Spanish</li>
+                    <li>Currency: Dominican Peso (DOP)</li>
+                    <li>Time Zone: UTC−4</li>
+                    <li>Calling Code: +1-809 / +1-829 / +1-849</li>
+                    <li>Internet TLD: .do</li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2 class="weather-emoji">Weather</h2>
+                <img src="images/6351955_cloud_forecast_holiday_summer_sun_icon.svg" alt="sunny icon"
+                    class="weather-icon">
+
+                <ul>
+                    <li class="grade" >Temperature: <span id="temperature">30</span> </li>
+                    <li>Conditions: Mostly Sunny</li>
+                    <li class= " velocity" >Wind: <span id="wind">13</span> </li>
+                    <li class="chill">Wind Chill: <span id="wind-chill">  </span></li>
+                </ul>
+            </section>
+        </div>
+
+
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> | 🏖️ Imanol Arturo Matos Ramirez 🏖️ | Dominican Republic </p>
+        <p> Last Modified: <span id="last"> ></span></p>
+
+    </footer>
+</body>
+
+</html>

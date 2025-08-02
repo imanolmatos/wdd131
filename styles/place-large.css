@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #4EA5DF;
+    --secondary-color: 255,255,252;
+    --accent1-color: #376323;
+    --accent2-color: #000500;
+  
+    --heading-font: 'Bebas Neue', cursive;
+    --paragraph-font: 'Roboto', sans-serif;
+  
+    --nav-background-color: #2892D7;
+    --nav-link-color: #000500;
+    --nav-hover-link-color: #376323;
+    --nav-hover-background-color: #FFFFFC;;
+}
+
+
+@media screen and (min-width:800px) {
+    h2.weather-emoji::after{
+        content: " 🌞 ";
+    }
+     .weather-icon{
+        display: none;
+    }
+    
+    
+
+
+
+}
+
+@media screen and (min-width:1000px) {
+     h2.weather-emoji::after{
+        content: " 🌞 ";
+        font-size: 35px;
+    }
+
+    .weather-icon{
+        display: none;
+    }
+
+    .hero
+    {position: relative;
+    height: 100vh;
+
+    }
+
+    .weather {
+        position: absolute;
+        top: 60%;  
+        left: 70%;
+        background-color: rgba(var(--secondary-color),0.5);
+        padding: 10px;
+    }
+
+    .data {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        background-color: rgba(var(--secondary-color),0.5);
+        padding: 10px;
+
+    }
+
+
+    
+}
