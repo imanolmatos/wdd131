@@ -57,14 +57,12 @@ a, p, figure {
 }
 
 
-h1,h2 {
+h1,h2{
     font-family: var(--heading-font);
     color: var(--accent2-color);
     text-align: center;
 
 }
-
-
 
 nav {
     max-width: 700px;
@@ -98,11 +96,13 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
+    margin-bottom: 50px;
 }
 
 img { 
-    width: 588px;
-    height: 390px;
+    width:100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 /* MENU */
