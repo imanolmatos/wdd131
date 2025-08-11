@@ -139,7 +139,7 @@ img {
 }
 
 #page-title {
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     font-size: 30px;
 
 }
