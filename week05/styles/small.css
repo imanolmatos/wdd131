@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #4EA5DF;
+    --secondary-color: #FFFFFC;
+    --accent1-color: #376323;
+    --accent2-color: #000500;
+  
+    --heading-font: 'Bebas Neue', cursive;
+    --paragraph-font: 'Roboto', sans-serif;
+  
+    --nav-background-color: #2892D7;
+    --nav-link-color: #000500;
+    --nav-hover-link-color: #376323;
+    --nav-hover-background-color: #FFFFFC;;
+}
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+body {
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+}
+
+
+
+header {
+    padding: .5rem 2%;
+    background-color: var(--primary-color);
+}
+header h1 {margin: 0;
+    font-family: var(--heading-font);
+}
+header h2 {margin: 0; font-weight: normal;}
+
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+
+.wfl fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 30px;
+
+}
+
+.wfl .stars {display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+
+}
+
+.wfl .star {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    font: 4rem;
+ 
+}
+
+.wfl .stars input[type="radio"] {
+    margin: 0;
+}
+
+.wfl legend {
+       display: block;
+    padding-top: 1rem;
+    color: var(--accent2-color);
+    font-size: .9rem;
+
+
+}
+
+.wfl label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent2-color);
+    font-size: .9rem;
+
+}
+
+.wfl div{
+    padding-top: 1rem; 
+    color: #445ba9;
+    font-size: .9rem;
+
+}
+
+.wfl input[type="text"],
+.wfl input[type="tel"],
+.wfl input[type="email"],
+.wfl input[type="url"],
+.wfl input[type="date"],
+.wfl select,
+.wfl input[type="number"]
+
+
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+
+}
+
+.wfl input[type="radio"],
+.wfl input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.wfl input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#4EA5DF,#4EA5DF);
+    color:#fff;
+    border-radius: 6px;
+      padding: .8rem;
+    width: 96%;
+  
+    max-width: 416px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px, 1px, 4px #999;
+
+}
+
+.wfl input:required {
+    border-right: solid 8px red;
+
+}
+.wfl input:required:valid {
+    border-bottom: solid 8px green;
+
+}
+
+.wfl select:required {
+    border-right: solid 8px red;
+
+}
+
+.wfl select:required:valid {
+    border-bottom: solid 8px green;
+
+}
+
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+    color: black ;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 450px;
+}
+
