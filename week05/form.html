@@ -27,34 +27,42 @@
 <body>
     <main>
         <header>
-        <h1>Product Review</h1>
+            <h1>Product Review</h1>
         </header>
         <form method="get" action="review.html" class="wfl">
             <fieldset>
                 <label for="productSelected">Product Name*</label>
-                    <select name="product" id="productSelected" required>
-                        <option value="" disabled selected>Choose a Product ... &#9662; </option>
-                    </select>
+                <select name="product" id="productSelected" required>
+                    <option value="" disabled selected>Select a Product ... &#9662; </option>
+                </select>
             </fieldset>
             <fieldset class="stars">
                 <legend>Overall Rating*</legend>
-                <label class="star">☆<input type="radio" name="star" value="1" id="star1" required></label>
-                <label class="star">☆☆<input type="radio" name="star" value="2"id="star2" required></label>
-                <label class="star">☆☆☆<input type="radio" name="star" value="3"id="star3"required></label>
-                <label class="star">☆☆☆☆<input type="radio" name="star" value="4"id="star4" required> </label>
-                <label class="star">☆☆☆☆☆<input type="radio" name="star" value="5"id="star5" required>  </label>
+                <label class="star" for="star1">☆<input type="radio" name="star" value="1" id="star1" required></label>
+                <label class="star" for="star2">☆☆<input type="radio" name="star" value="2" id="star2" required></label>
+                <label class="star" for="star3">☆☆☆<input type="radio" name="star" value="3" id="star3"
+                        required></label>
+                <label class="star" for="star4">☆☆☆☆<input type="radio" name="star" value="4" id="star4" required>
+                </label>
+                <label class="star" for="star5">☆☆☆☆☆<input type="radio" name="star" value="5" id="star5" required>
+                </label>
             </fieldset>
             <fieldset>
-                <label for="installedDate">Date of Installation*</label> <input type="date" name="date" id=installedDate required>
+                <label for="installedDate">Date of Installation*</label> <input type="date" name="date" id=installedDate
+                    required>
             </fieldset>
             <fieldset>
                 <legend> Which features did you find useful in the product? <br>
                     (Check all that apply)
                 </legend>
-                <label for="feat-durability"> <input type="checkbox" id="feat-durability" name="features" value="durability"> Durability</label>
-                <label for="feat-use"> <input type="checkbox" name="features" id="feat-use" value="ease of use"> Ease of Use</label>
-                <label for="feat-performance"> <input type="checkbox" name="features" id=feat-performance value="performance" > Performance</label>
-                <label for="feat-design"> <input type="checkbox" name="features" id="feat-design" value="design"> Design</label>
+                <label for="feat-durability"> <input type="checkbox" id="feat-durability" name="features"
+                        value="durability"> Durability</label>
+                <label for="feat-use"> <input type="checkbox" name="features" id="feat-use" value="ease of use"> Ease of
+                    Use</label>
+                <label for="feat-performance"> <input type="checkbox" name="features" id=feat-performance
+                        value="performance"> Performance</label>
+                <label for="feat-design"> <input type="checkbox" name="features" id="feat-design" value="design">
+                    Design</label>
             </fieldset>
             <fieldset>
                 <legend> Written Review <span class="optional">(Optional)</span></legend>
@@ -62,9 +70,9 @@
             </fieldset>
             <fieldset>
                 <legend> Your Name <span class="optional">(Optional)</span></legend>
-                <input type="text" name="user" id="userArea"> 
+                <input type="text" name="user" id="userArea">
             </fieldset>
-            <input type="submit" value="Post Review"> 
+            <input type="submit" value="Post Review">
 
     </main>
     <footer>
