@@ -8,10 +8,11 @@
     </title>
     <meta name="description" content="Product Review, list of products, feedback">
     <meta name="author" content="Imanol Arturo Matos Ramirez">
+ <link rel="stylesheet" type="text/css" href="styles/normalize.css">
 
     <link rel="stylesheet" type="text/css" href="styles/small.css">
     <link rel="stylesheet" type="text/css" href="styles/medium.css">
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+
     <link rel="stylesheet" type="text/css" href="styles/large.css">
 
     <script src="scripts/form.js" defer></script>
@@ -29,7 +30,7 @@
         <header>
             <h1>Product Review</h1>
         </header>
-        
+
         <form method="get" action="review.html" class="wfl">
             <fieldset>
                 <label for="productSelected">Product Name*</label>
@@ -39,18 +40,29 @@
             </fieldset>
             <fieldset class="stars">
                 <legend>Overall Rating*</legend>
-                <label class="star" for="star1">☆<input type="radio" name="star" value="1" id="star1" required></label>
-                <label class="star" for="star2">☆☆<input type="radio" name="star" value="2" id="star2" required></label>
-                <label class="star" for="star3">☆☆☆<input type="radio" name="star" value="3" id="star3"
-                        required></label>
-                <label class="star" for="star4">☆☆☆☆<input type="radio" name="star" value="4" id="star4" required>
-                </label>
-                <label class="star" for="star5">☆☆☆☆☆<input type="radio" name="star" value="5" id="star5" required>
-                </label>
+                <div class="star-item">
+                <input type="radio" name="star" value="1" id="star1" required> <label class="star" for="star1">☆</label>
+                </div>
+                <div class="star-item">
+                <input type="radio" name="star" value="2" id="star2" required> <label class="star"
+                    for="star2">☆☆</label>
+                </div>
+                <div class="star-item">
+                <input type="radio" name="star" value="3" id="star3" required> <label class="star"
+                    for="star3">☆☆☆</label>
+                </div>
+                <div class="star-item">
+                <input type="radio" name="star" value="4" id="star4" required> <label class="star"
+                    for="star4">☆☆☆☆</label>
+                </div>
+                <div class="star-item">
+                <input type="radio" name="star" value="5" id="star5" required> <label class="star"
+                    for="star5">☆☆☆☆☆</label>
+                 </div>
             </fieldset>
             <fieldset>
-                <label for="installedDate">Date of Installation*</label> <input type="date" name="date" id=installedDate
-                    required>
+                <label for="installedDate">Date of Installation*</label> <input type="date" name="date"
+                    id="installedDate" required>
             </fieldset>
             <fieldset>
                 <legend> Which features did you find useful in the product? <br>
@@ -60,17 +72,17 @@
                         value="durability"> Durability</label>
                 <label for="feat-use"> <input type="checkbox" name="features" id="feat-use" value="ease of use"> Ease of
                     Use</label>
-                <label for="feat-performance"> <input type="checkbox" name="features" id=feat-performance
+                <label for="feat-performance"> <input type="checkbox" name="features" id="feat-performance"
                         value="performance"> Performance</label>
                 <label for="feat-design"> <input type="checkbox" name="features" id="feat-design" value="design">
                     Design</label>
             </fieldset>
             <fieldset>
-                <legend> Written Review <span class="optional">(Optional)</span></legend>
+                <label for="reviewArea"> Written Review <span class="optional">(Optional)</span></label>
                 <textarea name="review" id="reviewArea" rows="6" placeholder="Write your review..."></textarea>
             </fieldset>
             <fieldset>
-                <legend> Your Name <span class="optional">(Optional)</span></legend>
+                <label for="userArea"> Your Name <span class="optional">(Optional)</span></label>
                 <input type="text" name="user" id="userArea">
             </fieldset>
             <input type="submit" value="Post Review">

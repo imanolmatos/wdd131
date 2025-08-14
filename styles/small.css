@@ -55,51 +55,46 @@ main {
 }
 
 
+
+
 .wfl fieldset {
     margin: 2rem 0;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 30px;
 
-}
-
-.wfl .stars {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 1rem 1.25rem;
-
-}
-
-.wfl .star {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-    font: 4rem;
-
-}
-
-.wfl .stars input[type="radio"] {
-    margin: 0;
-}
-
-.wfl legend {
-    display: block;
-    padding-top: 1rem;
-    color: var(--accent2-color);
-    font-size: .9rem;
-
 
 }
 
 .wfl label {
     display: block;
-    padding-top: 1rem;
     color: var(--accent2-color);
     font-size: .9rem;
+    margin: 1rem;
 
 }
+
+.wfl .star-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding-top: 0;
+}
+
+.wfl .star {
+    font-size: 1rem;
+}
+
+.wfl .stars {
+    display: flex;
+
+}
+
+.wfl .stars input[type="radio"]{
+    margin:0;
+}
+
 
 .wfl div {
     padding-top: 1rem;
@@ -126,6 +121,9 @@ main {
     appearance: none;
 
 }
+
+
+
 
 .wfl input[type="radio"],
 .wfl input[type="checkbox"] {
