@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Trip
+    </title>
+    <meta name="description" content="Schedule a trip, make a trip, beaches, el barco, monte rio, uvita, cueva">
+    <meta name="author" content="Imanol Arturo Matos Ramirez">
+    <link rel="stylesheet" type="text/css" href="styles/make.css">
+    <link rel="stylesheet" type="text/css" href="styles/make-large.css">
+    <script src="scripts/make.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+    
+    <main>
+        
+
+         <header>
+
+        <h1 id="page-title">Monte Rio Route</h1>
+        <button id="menu" aria-label="Open the Navegation Menu"> </button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html" title="home" class="nav-link ">Home </a></li>
+                <li><a href="make.html" title="make" class="nav-link active">Make a Trip </a></li>
+                <li><a href="know.html" title="know" class="nav-link ">Know the beaches</a></li>
+            </ul>
+        </nav>
+         </header>  
+
+        <form method="get" action="thanks.html" class="wfl">
+            
+             <fieldset>
+                <h2> Visit Monte Rio Route </h2>
+                <label for="userName"> Your Name* </label>
+                <input type="text" name="user" id="userName" required>           
+                <label for="userTel"> Your Telephone* </label>
+                <input type="tel" name="user" id="userTel" required>
+                <label for="userEmail"> Email* </label>
+                <input type="email" name="user" id="userEmail" required>
+            </fieldset>
+            <fieldset>
+                <label for="productSelected">Free Souvenir*</label>
+                <select name="product" id="productSelected" required>
+                    <option value="" disabled selected>Select a Souvenir... &#9662; </option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="travelledDate">Date of Travel*</label> <input type="date" name="date"
+                    id="travelledDate" required>
+            </fieldset>
+                 <fieldset class="stars">
+                <legend>Monte Rio Route Page's Overall Rating*</legend>
+                <div class="star-item">
+                <input type="radio" name="star" value="1" id="star1" required> <label class="star" for="star1">☆</label>
+                </div>
+                <div class="star-item">
+                <input type="radio" name="star" value="2" id="star2" required> <label class="star"
+                    for="star2">☆☆</label>
+                </div>
+                <div class="star-item">
+                <input type="radio" name="star" value="3" id="star3" required> <label class="star"
+                    for="star3">☆☆☆</label>
+                </div>
+                <div class="star-item">
+                <input type="radio" name="star" value="4" id="star4" required> <label class="star"
+                    for="star4">☆☆☆☆</label>
+                </div>
+                <div class="star-item">
+                <input type="radio" name="star" value="5" id="star5" required> <label class="star"
+                    for="star5">☆☆☆☆☆</label>
+                 </div>
+            </fieldset>
+            <fieldset>
+                <label for="reviewArea"> Anything we need to know<span class="optional">(Optional)</span></label>
+                <textarea name="review" id="reviewArea" rows="6" placeholder="Write here..."></textarea>
+            </fieldset>
+           
+            <input type="submit" value="Schedule trip">
+        </form>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> | 🏖️ Imanol Arturo Matos Ramirez 🏖️ | Dominican Republic </p>
+        <p> Last Modified: <span id="last"> ></span></p>
+
+    </footer>
+</body>
+
+</html>

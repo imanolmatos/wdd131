@@ -1,0 +1,48 @@
+@media screen and (min-width:800px) {
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+
+
+}
+
+@media screen and (min-width:1000px) {
+
+     h1 {
+        font-family: var(--paragraph-font);
+        font-size: 30px;
+        display: block;
+
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+
+
+}
