@@ -1,9 +1,9 @@
 @media screen and (min-width:800px) {
-    .photos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
+    .card {
+        grid-template-columns: 1fr ;
+
     }
+     
 
     #menu {
         display: none;
