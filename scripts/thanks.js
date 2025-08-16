@@ -26,7 +26,7 @@ hamButton.addEventListener("click", () => {
 
 // Local Storage
 
-//Another Conditional Branching A
+//show the count
 
 
 const counterDisplay = document.querySelector("#tripsCount");
