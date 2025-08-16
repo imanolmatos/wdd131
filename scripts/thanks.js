@@ -26,15 +26,3 @@ hamButton.addEventListener("click", () => {
 
 
 
- //Filters
-
- 
-  const navegationUpdated = document.querySelectorAll(".nav-link");
-  navegationUpdated.forEach(link =>
-    link.addEventListener("click", () => {
-        navegationUpdated.forEach(l => l.classList.remove("active"));
-        link.classList.add("active");
-    })
-
-    
-  );
