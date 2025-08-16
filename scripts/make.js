@@ -92,6 +92,8 @@ lastM.innerHTML = formatedLast;
   }
 ];
 
+
+
 const selection = document.querySelector("#productSelected");
 
 
@@ -104,5 +106,6 @@ option.value = product.id;
 selection.appendChild(option);
 }
  );
+
 
 

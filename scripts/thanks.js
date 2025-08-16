@@ -24,5 +24,21 @@ hamButton.addEventListener("click", () => {
 
 
 
+// Local Storage
+
+//Another Conditional Branching A
 
 
+const counterDisplay = document.querySelector("#tripsCount");
+
+let count =Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (count !== 0) {
+    counterDisplay.textContent=count;
+} else {
+    counterDisplay.textContent = count;
+}
+
+count++;
+
+localStorage.setItem("numVisits-ls",count)

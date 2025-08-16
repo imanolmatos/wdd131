@@ -1,5 +1,5 @@
-@media screen and (min-width:500px) {
-    .card {
+@media screen and (min-width:800px) {
+    .photos {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
@@ -29,14 +29,13 @@
 }
 
 @media screen and (min-width:1000px) {
-    .card {
+    .photos {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 15px;
     }
 
      h1 {
-        font-family: var(--paragraph-font);
         font-size: 30px;
         display: block;
 

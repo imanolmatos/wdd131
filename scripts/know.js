@@ -22,61 +22,61 @@ hamButton.addEventListener("click", () => {
     title.classList.toggle("open");
 });
 
-// Dynamic Beaches
+// Dynamic Beaches. Object and Array requirement requirement. 
 const beaches = [
   {
     beachName: "Monte Río",
     location: "Azua de Compostela, Dominican Republic",
     distance: 5,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    imageUrl: "images/monte.webp"
   },
   {
     beachName: "Uvita",
     location: "Azua de Compostela, Dominican Republic",
     distance: 5.5,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+    imageUrl: "images/uvita.webp"
   },
   {
     beachName: "Blanca",
     location: "Azua de Compostela, Dominican Republic",
     distance: 6,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    imageUrl: "images/blanca.webp"
   },
   {
     beachName: "Cueva de los piratas",
     location: "Azua de compostela, Dominican Republic",
     distance: 6.3,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+    imageUrl: "images/cueva.webp"
   },
   {
     beachName: "El Barco",
     location: "Azua de compostela, Dominican Republic",
     distance: 6.5,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+    imageUrl: "images/barco.webp"
   },
   {
     beachName: "La Caobita",
     location: "Barrera, Azua, Dominican Republic",
     distance: 30,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+    imageUrl: "images/caobita.webp"
   },
   {
     beachName: "Palmar de Ocoa",
     location: "Las charchas,Azua, Dominican Republic",
     distance: 38.7,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    imageUrl: "images/ocoa.webp"
   },
   {
     beachName: "Tortuguero",
     location: "Las charcas, Azua, Dominican Republic",
     distance: 11,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/santo-domingo-dominican-republic-temple/santo-domingo-dominican-republic-temple-1444-main.jpg"
+    imageUrl: "images/tortuguero.webp"
   },
   {
     beachName: "Caracoles",
     location: "Las Charcas,Azua, Dominican Republic",
     distance: 12,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/san-juan-puerto-rico-temple/san-juan-puerto-rico-temple-48152-main.jpg"
+    imageUrl: "images/caracoles.webp"
   }
 ];
 
@@ -97,7 +97,7 @@ function createBeachCard(filteredBeaches) {
      img.alt = beach.beachName;
      img.loading = "lazy";
      figcaption.innerHTML = `<p><strong>Location: </strong>${beach.location}</p>
-                             <p><strong>Distance: </strong>${beach.distance} kms </p>                                    `
+                             <p><strong>Distance: </strong>${beach.distance} kms </p>                                `
      figure.appendChild(title);
      figure.appendChild(img);
      figure.appendChild(figcaption);
@@ -151,28 +151,20 @@ createBeachCard(beaches);
     titleH2.innerHTML = "Beaches Z-A";
   });
 
-  //Conditional Branching 
+  //Conditional Branching for the click event  //Conditional branching requirement
 
-
-function handleDistanceClick(e) {
-    e.preventDefault(); 
-    // Si el botón clickeado es el de "closer"
-    if (e.currentTarget.id == "closer") {
-        createBeachCard(beaches.filter(beach => beach.distance < reference));
+  function conditionalBeach(event) {
+      event.preventDefault();
+      
+      if (event.currentTarget.id ==="closer") {
+        createBeachCard(beaches.filter(beach=> beach.distance < reference));
         titleH2.textContent = "Closer Beaches";
-    } else { 
-        // Si no es closer, entonces es "far"
-        createBeachCard(beaches.filter(beach => beach.distance > reference));
-        titleH2.textContent = "Far Beaches";
-    }
-}
+      }
+      else
+      {
+        createBeachCard(beaches.filter(beach=> beach.distance > reference));
+        titleH2.textContent ="Far Beaches";}
 
-// Asignamos la misma función a ambos
-closeLink.addEventListener("click", handleDistanceClick);
-farLink.addEventListener("click", handleDistanceClick);
-
-
-
-
-append
-
+      }
+  closeLink.addEventListener("click", conditionalBeach);
+  farLink.addEventListener("click", conditionalBeach);  
